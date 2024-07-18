@@ -1,13 +1,14 @@
 const sequelize = require('../config/connection')
-const { User, Favorites } = require('../models')
-const userSeedData = require('./user.json')
+const { Users, Favorites } = require('../models')
+const usersSeedData = require('./users.json')
 const favoritesSeedData = require('./favorites.json')
 
 const seedDatabase = async () => {
     await sequelize.sync({ force: false });
-    await User.bulkCreate(userSeedData, {
+    await Users.bulkCreate(usersSeedData, {
         returning: true
     })
+    await sequelize.sync({ force: false });
     await Favorites.bulkCreate(favoritesSeedData, {
         returning: true
     })

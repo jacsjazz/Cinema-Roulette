@@ -2,5 +2,9 @@
     {
         "user_id": 1,
         "movie_id": 550
+    },
+    {
+        "user_id": 2,
+        "movie_id": 236
     }
 ]
