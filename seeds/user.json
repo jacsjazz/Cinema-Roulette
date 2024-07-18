@@ -3,5 +3,16 @@
         "username": "FirstName",
         "email": "firstname@gmail.com",
         "password": "123456a"
-    }
+    },
+    {
+        "username": "FirstName",
+        "email": "firstname@gmail.com",
+        "password": "123456a"
+    },
+    {
+        "username": "FirstName",
+        "email": "firstname@gmail.com",
+        "password": "123456a"
+    },
+    
 ]
