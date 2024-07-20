@@ -1,0 +1,9 @@
+
+
+<script id="checkbox-template" type="text/x-handlebars-template"> 
+        {{#each checkboxes}} 
+        <input type="checkbox" id="{{id}}" name="{{name}}" {{#if checked}}checked{{/if}}> 
+        <label for="{{id}}">{{label}}</label>
+        <br> {{/each}} 
+</script>
+
