@@ -1,0 +1,29 @@
+
+<h2>Welcome to the CINEMA ROULETTE</h2>
+<div>
+    <p>Please pick up to 3 Genres.</p>
+</div>
+
+{{!-- 
+{{
+#each
+ items}}
+2  <input type="checkbox" id="item-{{@index}}" {{
+#if
+ isSelected}}checked{{
+/if
+}}>
+3  <label for="item-{{@index}}">{{name}}</label>
+4{{
+/each
+}} --}}
+
+
+<div>
+    <checkbox onclick="window.location.href='/api/endpoint1'">API Endpoint 1</checkbox>
+    <checkbox onclick="window.location.href='/api/endpoint2'">API Endpoint 2</checkbox>
+    <checkbox onclick="window.location.href='/api/endpoint3'">API Endpoint 3</checkbox>
+    <checkbox onclick="window.location.href='/api/endpoint1'">API Endpoint 1</checkbox>
+    <checkbox onclick="window.location.href='/api/endpoint2'">API Endpoint 2</checkbox>
+    <checkbox onclick="window.location.href='/api/endpoint3'">API Endpoint 3</checkbox>
+</div>
