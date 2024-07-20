@@ -4,6 +4,24 @@
     <p>Please pick up to 3 Genres.</p>
 </div>
 
+
+
+<form id="checkboxForm"  action="/submit">
+
+      <div>
+            <input type="checkbox" id="option1" name="options" value="1">
+            <label for="option1">History</label>
+        </div>
+
+    {{#each options}}
+        <div>
+            <input type="checkbox" id="{{this.id}}" name="options" value="{{this.value}}">
+            <label for="{{this.id}}">{{this.label}}</label>
+        </div>
+    {{/each}}
+    <button type="submit">History</button>
+</form>
+
 {{!-- 
 {{
 #each
@@ -19,11 +37,3 @@
 }} --}}
 
 
-<div>
-    <checkbox onclick="window.location.href='/api/endpoint1'">API Endpoint 1</checkbox>
-    <checkbox onclick="window.location.href='/api/endpoint2'">API Endpoint 2</checkbox>
-    <checkbox onclick="window.location.href='/api/endpoint3'">API Endpoint 3</checkbox>
-    <checkbox onclick="window.location.href='/api/endpoint1'">API Endpoint 1</checkbox>
-    <checkbox onclick="window.location.href='/api/endpoint2'">API Endpoint 2</checkbox>
-    <checkbox onclick="window.location.href='/api/endpoint3'">API Endpoint 3</checkbox>
-</div>

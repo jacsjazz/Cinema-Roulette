@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Dish = require('../models/Favorites');
+const Favorites = require('../models/Favorites');
 
 router.get('/', async (req, res) => {
     // const dishData = await Dish.findAll().catch((err) => {
