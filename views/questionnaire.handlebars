@@ -9,17 +9,23 @@
 <form id="checkboxForm"  action="/submit">
 
       <div>
-            <input type="checkbox" id="option1" name="options" value="1">
-            <label for="option1">History</label>
+            <input type="checkbox" id="option1" name="options" value="28">
+            <label for="option1">Action</label>
+            <input type="checkbox" id="option2" name="options" value="14">
+            <label for="option2">Fantasy</label>
+            <input type="checkbox" id="option3" name="options" value="36">
+            <label for="option3">History</label>
+            <input type="checkbox" id="option4" name="options" value="27">
+            <label for="option4">Horror</label>
+            <input type="checkbox" id="option5" name="options" value="10749">
+            <label for="option5">Romance</label>
+            <input type="checkbox" id="option6" name="options" value="878">
+            <label for="option6">SciFi</label>
+            
         </div>
 
-    {{#each options}}
-        <div>
-            <input type="checkbox" id="{{this.id}}" name="options" value="{{this.value}}">
-            <label for="{{this.id}}">{{this.label}}</label>
-        </div>
-    {{/each}}
-    <button type="submit">History</button>
+
+    <button type="submit">ROULETTE!</button>
 </form>
 
 {{!-- 
