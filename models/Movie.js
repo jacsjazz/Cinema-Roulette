@@ -11,6 +11,10 @@ Movie.init(
         primaryKey: true,
         autoIncrement: true,
     },
+    movie_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
     title: {
         type: DataTypes.STRING,
         allowNull: false
