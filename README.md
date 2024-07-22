@@ -24,5 +24,3 @@ Link to deployed application:
 API: https://api.themoviedb.org/3/genre/movie/list?language=en' \
 
 ![Homepage Screenshot](./public/homepage-screenshot.png)
-
-Walkthrough video:
