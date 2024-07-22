@@ -209,3 +209,22 @@ p {
     background-color: #2b0137;
 
 }
+.cardClass{
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    overflow: hidden;
+}
+.addToFavorites{
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+
+}
+.cardName
+{
+    overflow: hidden;
+}

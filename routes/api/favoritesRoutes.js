@@ -4,7 +4,6 @@ const { Movie } = require('../../models');
 
 router.post('/', async (req, res) => {
     const movieID = req.query.movieID
-    console.log(req.query.movieID)
     let favoriteMovie = {}
 
     try {

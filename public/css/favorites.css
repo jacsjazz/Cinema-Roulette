@@ -225,3 +225,10 @@ p {
     background-color: #2b0137;
 
 }
+.card{
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    overflow: hidden;
+}

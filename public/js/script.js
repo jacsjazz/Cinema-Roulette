@@ -21,15 +21,19 @@ const apiRequest = async (event) => {
         const addToFavorites = document.createElement('button')
         const movieName = document.createElement('h2')
         const movieImage = document.createElement('img')
+        card.className = "cardClass"
         addToFavorites.value = movies.results[i].id
         addToFavorites.textContent = "Add to Favorites!"
         addToFavorites.className = "addToFavorites"
         addToFavorites.addEventListener('click', addToFavoritesDB)
         movieName.textContent = movies.results[i].title
+        movieName.className = "cardName"
         movieImage.src = `https://image.tmdb.org/t/p/w200/${movies.results[i].poster_path}`
-        card.appendChild(addToFavorites)
         card.appendChild(movieName)
+    
         card.appendChild(movieImage)
+        card.appendChild(addToFavorites)
+        
         movie.appendChild(card)
     }
 }
