@@ -13,7 +13,9 @@ Movie.init(
     },
     movie_id: {
         type: DataTypes.INTEGER,
+        unique: true,
         allowNull: false,
+
     },
     title: {
         type: DataTypes.STRING,
