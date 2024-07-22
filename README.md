@@ -2,7 +2,7 @@ CINEMA ROULETTE
 
 The application uses a Node and Express backend and utilizes both GET and POST routes for retrieving and adding new data
 
-The application uses RMDB Movies API to refrence selections by user
+The application uses TMDB Movies API to refrence selections by user
 
 When you look at the application's folder structure,
 Then you will see it follows the MVC(Model-View-Controller)paradigm
