@@ -15,31 +15,24 @@ router.post('/', async (req, res) => {
                 Authorization: process.env.BEARER
             }
         };
-
-
         const response = await fetch(`https://api.themoviedb.org/3/movie/${movieID}?language=en-US`, options)
         const data = await response.json()
-        // console.log(data)
         favoriteMovie = {
             movie_id: data.id,
             title: data.title,
             thumbnail: data.poster_path
         }
-
-
     }
     catch (err) {
         res.json(err)
         console.log(err)
 
     }
-
     try {
         await Movie.create(favoriteMovie);
         res.status(201).json({
             message: "Movie Successfully Added!"
         })
-
     } catch (err) {
         console.log(err);
         res.status(500).json({

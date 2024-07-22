@@ -1,9 +1,5 @@
 const movie = document.querySelector('#movies')
 
-
-
-
-
 const apiRequest = async (event) => {
     event.preventDefault();
     let genres = []
@@ -12,7 +8,6 @@ const apiRequest = async (event) => {
     for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].checked) {
             genres.push(inputs[i].value)
-            // console.log(genres)
         }
     }
 
@@ -21,10 +16,7 @@ const apiRequest = async (event) => {
 
     });
     const movies = await response.json()
-    // console.log(movies)
     for (let i = 0; i < 10; i++) {
-        // console.log(movies)
-        // console.log(movies.results[i])
         const card = document.createElement('div')
         const addToFavorites = document.createElement('button')
         const movieName = document.createElement('h2')
@@ -40,10 +32,7 @@ const apiRequest = async (event) => {
         card.appendChild(movieImage)
         movie.appendChild(card)
     }
-
-
 }
-
 
 const addToFavoritesDB = async (event) => {
     const movieID = event.target.value
@@ -55,15 +44,9 @@ const addToFavoritesDB = async (event) => {
     alert(movie.message)
 }
 
-
-
-
-
 document
     .querySelector('#submit')
     .addEventListener('click', apiRequest);
-
-
 
 
 
