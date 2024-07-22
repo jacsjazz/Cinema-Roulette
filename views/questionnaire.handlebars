@@ -1,49 +1,24 @@
-
-<h2>Welcome to the CINEMA ROULETTE</h2>
-<div>
-    <p>Please pick up to 3 Genres.</p>
-</div>
-
-
-
-<form id="checkboxForm">
-
-      <div>
-            <input type="checkbox" id="option1" name="options" value="28">
-            <label for="option1">Action</label>
-            <input type="checkbox" id="option2" name="options" value="14">
-            <label for="option2">Fantasy</label>
-            <input type="checkbox" id="option3" name="options" value="36">
-            <label for="option3">History</label>
-            <input type="checkbox" id="option4" name="options" value="27">
-            <label for="option4">Horror</label>
-            <input type="checkbox" id="option5" name="options" value="10749">
-            <label for="option5">Romance</label>
-            <input type="checkbox" id="option6" name="options" value="878">
-            <label for="option6">SciFi</label>
-            
-        </div>
-
-
-    <button id="submit" type="submit">ROULETTE!</button>
-</form>
-
-
+<link rel="stylesheet" href="./css/favorites.css" />
+<script id="checkbox-template" type="text/x-handlebars-template"> 
+        {{#each checkboxes}} 
+        <input type="checkbox" id="{{id}}" name="{{name}}" {{#if checked}}checked{{/if}}> 
+        <label for="{{id}}">{{label}}</label>
+        <br> {{/each}} 
+</script>
 
 <div>
-        <section id="movies">
-                {{!-- <main>
-                        <image id='poster'></image>
-                </main>
-                <aside>
-                        <h2 id="info"></h2>
-                </aside> --}}
-        </section>
+        <a href="questionnaire.handlebars">Home</a>
 </div>
 
-<div class="footer">
-    <p>Made with ♥ by Dylan, Joe, Jose, Laxmi, Neil, and Noushin</p>
-
+<div class="testing">
+        <p>Movie Name</p>
+        <img src="batman.png" alt="batman" class="image-item" />
+        <p>Movie Name</p>
+        <img src="harrypotter.png" alt="harrypotter" class="image-item" />
+        <p>Movie Name</p>
+        <img src="gladiator2.png" alt="gladiator" class="image-item" />
+        <p>Movie Name</p>
+        <img src="starwars.png" alt="gladiator" class="image-item" />
 </div>
-<script src="/js/script.js"></script>
 
+<script src="../public/js/script.js"></script>
