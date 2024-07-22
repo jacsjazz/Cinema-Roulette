@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./css/favorites.css" />
 <script id="checkbox-template" type="text/x-handlebars-template"> 
         {{#each checkboxes}} 
         <input type="checkbox" id="{{id}}" name="{{name}}" {{#if checked}}checked{{/if}}> 
@@ -6,19 +7,18 @@
 </script>
 
 <div>
-        <a href="questionnaire.handlebars">Home</a>
+        <a href="/favorites">Home</a>
 </div>
 
-<div>
-        <section id="movie">
-                <main>
-                        <h2>"hello!"</h2>
-                        <image id='poster'></image>
-                </main>
-                <aside>
-                        <h2 id="info"></h2>
-                </aside>
-        </section>
+<div class="testing">
+        <p>Movie Name</p>
+        <img src="batman.png" alt="batman" class="image-item" />
+        <p>Movie Name</p>
+        <img src="harrypotter.png" alt="harrypotter" class="image-item" />
+        <p>Movie Name</p>
+        <img src="gladiator2.png" alt="gladiator" class="image-item" />
+        <p>Movie Name</p>
+        <img src="starwars.png" alt="gladiator" class="image-item" />
 </div>
 
 <script src="../public/js/script.js"></script>

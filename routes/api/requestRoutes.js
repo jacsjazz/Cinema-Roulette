@@ -1,8 +1,11 @@
 const router = require('express').Router();
+// /api/request
 
 router.get('/', async (req, res) => {
-
-   try {
+  const genres = req.query.genres
+  console.log(req.query.genres)
+  
+ try {
   const options = {
     method: 'GET',
     headers: {
@@ -11,19 +14,11 @@ router.get('/', async (req, res) => {
     }
   };
 
-  movie.innerHTML = ''
-  let genres = "with_genres="
-  const inputs = document.querySelectorAll('#checkboxForm >div>input')
-  for (let i = 0; i < inputs.length; i++) {
-    if (inputs[i].checked) {
-      genres += `${inputs[i].value}%2C` 
-      console.log(genres)
-    }
-  }
   
-  const response = await fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres28`, options)
+  
+  const response = await fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=${genres}`, options)
     const data = await response.json()
-    console.log(data)
+    // console.log(data)
     res.json(data)
 
    }
