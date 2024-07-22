@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const Favorites = require('../../models/Favorites');
 
 // This route uses async/await with '.catch()' for errors
 // and no HTTP status codes

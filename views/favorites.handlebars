@@ -1,0 +1,24 @@
+<script id="checkbox-template" type="text/x-handlebars-template"> 
+        {{#each checkboxes}} 
+        <input type="checkbox" id="{{id}}" name="{{name}}" {{#if checked}}checked{{/if}}> 
+        <label for="{{id}}">{{label}}</label>
+        <br> {{/each}} 
+</script>
+
+<div>
+        <a href="questionnaire.handlebars">Home</a>
+</div>
+
+<div>
+        <section id="movie">
+                <main>
+                        <h2>"hello!"</h2>
+                        <image id='poster'></image>
+                </main>
+                <aside>
+                        <h2 id="info"></h2>
+                </aside>
+        </section>
+</div>
+
+<script src="../public/js/script.js"></script>
