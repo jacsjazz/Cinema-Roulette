@@ -25,4 +25,9 @@ API: https://api.themoviedb.org/3/genre/movie/list?language=en' \
 
 ![Homepage Screenshot](./public/homepage-screenshot.png)
 
-![Screenshot 2024-07-21 140349](https://github.com/user-attachments/assets/b4267757-2566-4022-ab87-49161c4537d0)
+![Screenshot 2024-07-22 143228](https://github.com/user-attachments/assets/4cfba6a2-fb78-4f7c-8e7c-5e6e0bc1477c)
+
+![Screenshot 2024-07-22 143252](https://github.com/user-attachments/assets/08e6ba48-9680-443b-a357-ea1db950f43f)
+
+![Screenshot 2024-07-22 143419](https://github.com/user-attachments/assets/018ef534-15a9-4443-a633-4962cb2111a5)
+
