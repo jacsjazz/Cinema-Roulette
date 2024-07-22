@@ -19,7 +19,8 @@ Then Sequelize ORM is used to manage and interact with the MySQL database
 When handling API keys and sensitive information,
 Then the application uses environemnt variables to protect them
 
-Link to deployed application: 
+Link to repository: https://github.com/jacsjazz/Cinema-Roulette
+Link to deployed application: https://cinema-roulette.onrender.com/
 
 API: https://api.themoviedb.org/3/genre/movie/list?language=en' 
 
