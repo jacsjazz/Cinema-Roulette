@@ -21,7 +21,7 @@ dd {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000000;
     color: #333;
     margin: 0;
     padding: 0;
@@ -99,6 +99,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+
 form > div {
     margin-bottom: 25px;
 }
@@ -158,9 +159,43 @@ button[type="submit"]:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.container:hover {
+    box-shadow: 0 0 150px rgb(255, 200, 2);
+}
+
 p {
     text-align: center;
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 20px;
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #d0e5ff;
+}
+
+.image-item {
+    border-radius: 8%;
+    width: 370px;
+    height: 200px;
+}
+
+.image-item:hover {    
+    box-shadow:0 8px 10px 0 rgba(11, 10, 10, 0.2), 0 6px 20px 0 rgba(11, 10, 10, 0.2);
+}
+
+.movie-list {
+    background-color: #2b0137;
+}
+
+.movie-list:hover {
+    box-shadow: 0 0 150px rgb(255, 200, 2);
+}
+
+.favorites {
+   text-align: right;
+   font-weight: bold;
+   font-size: 20px;
+   margin-right: 300px;
 }
