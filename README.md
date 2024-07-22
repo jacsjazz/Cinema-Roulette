@@ -21,9 +21,7 @@ Then the application uses environemnt variables to protect them
 
 Link to deployed application: 
 
-API: https://api.themoviedb.org/3/genre/movie/list?language=en' \
-
-![Homepage Screenshot](./public/homepage-screenshot.png)
+API: https://api.themoviedb.org/3/genre/movie/list?language=en' 
 
 ![Screenshot 2024-07-22 143228](https://github.com/user-attachments/assets/4cfba6a2-fb78-4f7c-8e7c-5e6e0bc1477c)
 
