@@ -24,3 +24,5 @@ Link to deployed application:
 API: https://api.themoviedb.org/3/genre/movie/list?language=en' \
 
 ![Homepage Screenshot](./public/homepage-screenshot.png)
+
+![Screenshot 2024-07-21 140349](https://github.com/user-attachments/assets/b4267757-2566-4022-ab87-49161c4537d0)
