@@ -30,3 +30,6 @@ API: https://api.themoviedb.org/3/genre/movie/list?language=en'
 
 ![Screenshot 2024-07-22 143419](https://github.com/user-attachments/assets/018ef534-15a9-4443-a633-4962cb2111a5)
 
+![Screenshot_2024-07-22_182326](https://github.com/user-attachments/assets/0ad485d9-9a9b-4adc-83e5-b7c4f46e9f75)
+
+
