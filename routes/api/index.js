@@ -1,9 +1,9 @@
 const router = require('express').Router();
 
-const favoriteRoutes = require('./favoriteRoutes')
 const requestsRoutes = require('./requestRoutes')
+const favoritesRoutes = require('./favoritesRoutes')
 
-router.use('/favorites', favoriteRoutes)
 router.use('/request', requestsRoutes)
+router.use('/favorites', favoritesRoutes)
 
 module.exports = router;

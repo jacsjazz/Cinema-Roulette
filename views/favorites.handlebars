@@ -1,24 +1,18 @@
-<script id="checkbox-template" type="text/x-handlebars-template"> 
-        {{#each checkboxes}} 
-        <input type="checkbox" id="{{id}}" name="{{name}}" {{#if checked}}checked{{/if}}> 
-        <label for="{{id}}">{{label}}</label>
-        <br> {{/each}} 
-</script>
-
+<link rel="stylesheet" href="./css/favorites.css" />
 <div>
-        <a href="questionnaire.handlebars">Home</a>
+        <a href="/">Home</a>
 </div>
 
-<div>
-        <section id="movie">
-                <main>
-                        <h2>"hello!"</h2>
-                        <image id='poster'></image>
-                </main>
-                <aside>
-                        <h2 id="info"></h2>
-                </aside>
-        </section>
+<div class="testing">
+        {{#each movies as |movie|}}
+        <div>
+                <h2>{{movie.id}}</h2>
+                <img src="https://image.tmdb.org/t/p/w200/{{movie.thumbnail}}">
+                <button value={{movie.id}}></button>
+        </div>
+        
+        {{/each}}
+
 </div>
 
 <script src="../public/js/script.js"></script>
