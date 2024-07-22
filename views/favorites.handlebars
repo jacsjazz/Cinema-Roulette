@@ -1,24 +1,18 @@
 <link rel="stylesheet" href="./css/favorites.css" />
-<script id="checkbox-template" type="text/x-handlebars-template"> 
-        {{#each checkboxes}} 
-        <input type="checkbox" id="{{id}}" name="{{name}}" {{#if checked}}checked{{/if}}> 
-        <label for="{{id}}">{{label}}</label>
-        <br> {{/each}} 
-</script>
-
 <div>
-        <a href="/favorites">Home</a>
+        <a href="/">Home</a>
 </div>
 
 <div class="testing">
-        <p>Movie Name</p>
-        <img src="batman.png" alt="batman" class="image-item" />
-        <p>Movie Name</p>
-        <img src="harrypotter.png" alt="harrypotter" class="image-item" />
-        <p>Movie Name</p>
-        <img src="gladiator2.png" alt="gladiator" class="image-item" />
-        <p>Movie Name</p>
-        <img src="starwars.png" alt="gladiator" class="image-item" />
+        {{#each movies as |movie|}}
+        <div>
+                <h2>{{movie.id}}</h2>
+                <img src="https://image.tmdb.org/t/p/w200/{{movie.thumbnail}}">
+                <button value={{movie.id}}></button>
+        </div>
+        
+        {{/each}}
+
 </div>
 
 <script src="../public/js/script.js"></script>

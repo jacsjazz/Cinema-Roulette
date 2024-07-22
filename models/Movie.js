@@ -23,7 +23,7 @@ Movie.init(
     },
 
     thumbnail: {
-       
+        type: DataTypes.STRING,
         allowNull: true,
         }    
     },
