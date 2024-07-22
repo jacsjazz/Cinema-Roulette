@@ -53,7 +53,7 @@ function getRecipeUsa() {
       for (let i = 0; i < 10; i++) {
         console.log(movies)
         console.log(movies.results[i])
-           const card = document.createElement('a')
+           const card = document.createElement('div')
            const movieName = document.createElement('h2')
            const movieImage = document.createElement('img')
            movieName.textContent = movies.results[i].title
@@ -61,7 +61,6 @@ function getRecipeUsa() {
            card.appendChild(movieName)
            card.appendChild(movieImage)
            movie.appendChild(card)
-           
       }
     })
 
